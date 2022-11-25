@@ -1,0 +1,54 @@
+import React from "react";
+import AtelierUnique from "./AtelierUnique";
+
+type Props = {
+  semaine: number;
+  onClick: (idChoosen: number) => void;
+};
+
+const data: {
+  id: number;
+  matière: string;
+  titre: string;
+}[] = [
+  {
+    id: 1,
+    matière: "francais",
+    titre: "homophones",
+  },
+  {
+    id: 2,
+    matière: "maths",
+    titre: "additions",
+  },
+  {
+    id: 3,
+    matière: "anglais",
+    titre: "speak in english",
+  },
+];
+
+const AtelierSemaine: React.FC<Props> = ({ semaine, onClick }) => {
+  const AtelierArray: JSX.Element[] = [];
+
+  data.forEach((Atelier) => {
+    AtelierArray.push(
+      <AtelierUnique
+        key={Atelier.id}
+        id={Atelier.id}
+        matière={Atelier.matière}
+        titre={Atelier.titre}
+        onClick={onClick}
+      />
+    );
+  });
+
+  return (
+    <div>
+      <p>atelier de la semaine: {semaine}</p>
+      {AtelierArray}
+    </div>
+  );
+};
+
+export default AtelierSemaine;
