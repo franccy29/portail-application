@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/nav-bar/NavBar";
 import Home from "./feature/Admin/Home";
 import Ateliers from "./feature/Users/ateliers/Ateliers";
@@ -15,11 +15,10 @@ export const App = () => (
     </div>
     <div className={ 'feature' }>
       <Routes>
-      <Route path="/atelier" element={<Ateliers />} />
-        <Route path="atelier" element={<Ateliers />} />
-        <Route path='true' element={<Notes />} />
-        <Route path="test" element={<Tests />} />
-        <Route path="admin" element={<Home />} />
+        <Route path="Ateliers" element={<Ateliers />} />
+        <Route path='Notes' element={<Notes />} />
+        <Route path="Tests" element={<Tests />} />
+        <Route path="Admin" element={<Home />} />
         <Route path="*" element={<HomeUser />} />
       </Routes>
     </div>

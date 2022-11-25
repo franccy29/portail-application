@@ -1,21 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavBarStyled } from "./NavBar.style";
+import Quote from "./quote/quote";
 
 type Props = {};
 
 const NavBar: React.FC<Props> = () => (
-  <div>
-    <div>
-      <span>
-        "L'éducation est l'arme la plus puissante pour changer le monde."
-      </span>
-      <span>-Nelson Mandela</span>
+  <NavBarStyled>
+    <Quote />
+    <div className={ 'navbar-links' }>
+      <Link to={ 'Acceuil' }>ACCUEIL</Link>
+      <Link to={ 'Notes' }>NOTES</Link>
+      <Link to={ 'Ateliers' }>ATELIERS</Link>
+      <Link to={ 'Tests' }>TESTS</Link>
     </div>
-    <Link to={ 'ACCUEIL' }>ACCUEIL</Link>
-    <Link to={ 'NOTES' }>NOTES</Link>
-    <Link to={ 'ATELIERS' }>ATELIERS</Link>
-    <Link to={ 'TESTS' }>TESTS</Link>
-  </div>
+  </NavBarStyled>
 );
 
 export default NavBar;
