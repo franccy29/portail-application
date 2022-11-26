@@ -9,7 +9,7 @@ const NavBar: React.FC<Props> = () => (
   <NavBarStyled>
     <Quote />
     <div className={ 'navbar-links' }>
-      <Link to={ 'Acceuil' }>ACCUEIL</Link>
+      <Link to={ 'Acceuil' }>ACCUEIL</Link> // changer ça pour des box
       <Link to={ 'Notes' }>NOTES</Link>
       <Link to={ 'Ateliers' }>ATELIERS</Link>
       <Link to={ 'Tests' }>TESTS</Link>
