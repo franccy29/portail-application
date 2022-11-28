@@ -1,6 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { AppStyled } from "./App.style";
 import NavBar from "./components/nav-bar/NavBar";
+import SearchBar from "./components/search-bar/search-bar";
 import Home from "./feature/Admin/Home";
 import Ateliers from "./feature/Users/ateliers/Ateliers";
 import HomeUser from "./feature/Users/home/Home-user";
@@ -9,8 +11,9 @@ import Tests from "./feature/Users/tests/Tests";
 
 
 export const App = () => (
-  <div className={ 'app' }>
+  <AppStyled className={ 'app' }>
     <div className={ 'menu' }>
+      <SearchBar />
       <NavBar />
     </div>
     <div className={ 'feature' }>
@@ -22,5 +25,5 @@ export const App = () => (
         <Route path="*" element={<HomeUser />} />
       </Routes>
     </div>
-</div>
+</AppStyled>
 );
