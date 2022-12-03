@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import LinkButton from "../link-button/link-button";
 import { NavBarStyled } from "./NavBar.style";
 import Quote from "./quote/quote";
 
@@ -9,10 +9,12 @@ const NavBar: React.FC<Props> = () => (
   <NavBarStyled>
     <Quote />
     <div className={ 'navbar-links' }>
-      <Link to={ 'Acceuil' }>ACCUEIL</Link>
-      <Link to={ 'Notes' }>NOTES</Link>
-      <Link to={ 'Ateliers' }>ATELIERS</Link>
-      <Link to={ 'Tests' }>TESTS</Link>
+      <LinkButton link={ '/acceuil' }>ACCUEIL</LinkButton>
+      <LinkButton link={ '/notes' }>NOTES DE COURS</LinkButton>
+      <LinkButton link={ '/ateliers' }>ATELIERS</LinkButton>
+      <LinkButton link={ '/capsules' }>CAPSULES</LinkButton>
+      <LinkButton link={ '/tests' }>TESTS</LinkButton>
+      <LinkButton link={ '/ressources' }>RESSOURCES</LinkButton>
     </div>
   </NavBarStyled>
 );

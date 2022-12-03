@@ -1,13 +1,14 @@
 import { styled } from "@mui/material";
 
 export const NavBarStyled = styled('div')({
-  backgroundColor: '#189e5e',
+  backgroundColor: '#00c0f6',
   display: 'flex',
   justifyContent: 'space-between',
+  padding: '10px',
 
-  'navbar-links': {
+  '.navbar-links': {
     display: 'flex',
-    gap: '5px',
-    color: '#0051FF',
+    flexDirection: 'row',
+    gap: '15px',
   },
 });
