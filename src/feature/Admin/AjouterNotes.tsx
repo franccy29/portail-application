@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 type Props = {
   navigator: React.Dispatch<React.SetStateAction<string>>;
@@ -6,11 +6,11 @@ type Props = {
 
 const AjouterNotes: React.FC<Props> = ({ navigator }) => {
   const [semaineChoisis, setSemaineChoisis] = useState<number>(0);
-  const [titreNote, setTitreNote] = useState<string>("");
-  const [matiere, setMatiere] = useState<string>("");
-  const [description, setDescription] = useState<string>("");
-  const [typeAide, setTypeAide] = useState<string>("");
-  const [aideLien, setAideLien] = useState<string>("");
+  const [titreNote, setTitreNote] = useState<string>('');
+  const [matiere, setMatiere] = useState<string>('');
+  const [description, setDescription] = useState<string>('');
+  const [typeAide, setTypeAide] = useState<string>('');
+  const [aideLien, setAideLien] = useState<string>('');
 
 
 
@@ -31,14 +31,14 @@ const AjouterNotes: React.FC<Props> = ({ navigator }) => {
       typeAide: typeAide,
       aideLien: aideLien
     };
-    console.log("envoyer a la db: ", finalNote);
-    navigator("home");
+    console.log('envoyer a la db: ', finalNote);
+    navigator('home');
   };
 
   return (
     <div>
       <h1>ajoute des notes de cours</h1>
-      <p onClick={() => navigator("home")}>retour au menu</p>
+      <p onClick={() => navigator('home')}>retour au menu</p>
       <div>
       <p>quel titre va avoir tes notes de cours?</p>
       <input
@@ -58,9 +58,9 @@ const AjouterNotes: React.FC<Props> = ({ navigator }) => {
       <div>
       <p>pour quel matiere?</p>
       <select value={matiere} onChange={(e) => setMatiere(e.target.value)}>
-        <option value={"Francais"}>Francais</option>
-        <option value={"Anglais"}>Anglais</option>
-        <option value={"Maths"}>Maths</option>
+        <option value={'Francais'}>Francais</option>
+        <option value={'Anglais'}>Anglais</option>
+        <option value={'Maths'}>Maths</option>
       </select>
       </div>
       <div>
@@ -73,9 +73,9 @@ const AjouterNotes: React.FC<Props> = ({ navigator }) => {
       <div>
       <p>video, pdf, rien?</p>
       <select value={typeAide} onChange={(e) => setTypeAide(e.target.value)}>
-        <option value={"pdf"}>pdf</option>
-        <option value={"video"}>video</option>
-        <option value={"rien"}>rien</option>
+        <option value={'pdf'}>pdf</option>
+        <option value={'video'}>video</option>
+        <option value={'rien'}>rien</option>
       </select>
       </div>
       <div>

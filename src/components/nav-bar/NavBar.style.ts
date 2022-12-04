@@ -1,7 +1,8 @@
-import { styled } from "@mui/material";
+import { styled } from '@mui/material';
+import { color } from '../../style/color';
 
 export const NavBarStyled = styled('div')({
-  backgroundColor: '#00c0f6',
+  backgroundColor: color.primaryColor,
   display: 'flex',
   justifyContent: 'space-between',
   padding: '10px',

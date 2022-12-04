@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 type Props = {
   choix: string[] | undefined;
@@ -16,40 +16,40 @@ const ChoixMultiple: React.FC<Props> = ({ choix, setValue }) => {
   return (
     <div>
       <form>
-        <div className="radio">
+        <div className='radio'>
           <label>
             <input
-              type="radio"
+              type='radio'
               checked={selected === 1}
               onChange={() => handleChange(1)}
             />
             {choix && choix[0]}
           </label>
         </div>
-        <div className="radio">
+        <div className='radio'>
           <label>
             <input
-              type="radio"
+              type='radio'
               checked={selected === 2}
               onChange={() => handleChange(2)}
             />
             {choix && choix[1]}
           </label>
         </div>
-        <div className="radio">
+        <div className='radio'>
           <label>
             <input
-              type="radio"
+              type='radio'
               checked={selected === 3}
               onChange={() => handleChange(3)}
             />
             {choix && choix[2]}
           </label>
         </div>
-        <div className="radio">
+        <div className='radio'>
           <label>
             <input
-              type="radio"
+              type='radio'
               checked={selected === 4}
               onChange={() => handleChange(4)}
             />

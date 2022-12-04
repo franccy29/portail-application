@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import AtelierSemaine from "./AtelierSemaine";
+import React, { useState } from 'react';
+import AtelierSemaine from './AtelierSemaine';
 
 type Props = {};
 
@@ -26,7 +26,7 @@ const Ateliers: React.FC<Props> = () => {
   };
 
   const chooseAtelier = (idChoosen: number): void => {
-    // navigator("OuvrirAtelier");
+    // navigator('OuvrirAtelier');
     // AtelierChoisis(idChoosen);
   };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 type Props = {};
 
@@ -10,7 +10,7 @@ const Home: React.FC<Props> = () => {
 
   const handleNumberOfWeek = (num: number): void => {
     setNumberOfWeek(num);
-    console.log("set dans la db le nombre de week a : ", num);
+    console.log('set dans la db le nombre de week a : ', num);
     // faire quil set ca dans la db
   };
 
@@ -42,11 +42,11 @@ const Home: React.FC<Props> = () => {
           Set a ce nombre de semaine la
         </button>
       </div>
-      {/* <p onClick={() => navigator("AjouterAtelier")}>Un Atelier?</p>
-      <p onClick={() => navigator("AjouterNotes")}>Des notes de cours?</p>
+      {/* <p onClick={() => navigator('AjouterAtelier')}>Un Atelier?</p>
+      <p onClick={() => navigator('AjouterNotes')}>Des notes de cours?</p>
       <h2>Tu modifier quoi?</h2>
-      <p onClick={() => navigator("ModifierAtelier")}>Un Atelier?</p>
-      <p onClick={() => navigator("ModifierNotes")}>Des notes de cours?</p> */}
+      <p onClick={() => navigator('ModifierAtelier')}>Un Atelier?</p>
+      <p onClick={() => navigator('ModifierNotes')}>Des notes de cours?</p> */}
     </div>
   );
 };

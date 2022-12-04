@@ -1,5 +1,5 @@
-import React from "react";
-import AtelierUnique from "./AtelierUnique";
+import React from 'react';
+import AtelierUnique from './AtelierUnique';
 
 type Props = {
   semaine: number;
@@ -13,18 +13,18 @@ const data: {
 }[] = [
   {
     id: 1,
-    matière: "francais",
-    titre: "homophones",
+    matière: 'francais',
+    titre: 'homophones',
   },
   {
     id: 2,
-    matière: "maths",
-    titre: "additions",
+    matière: 'maths',
+    titre: 'additions',
   },
   {
     id: 3,
-    matière: "anglais",
-    titre: "speak in english",
+    matière: 'anglais',
+    titre: 'speak in english',
   },
 ];
 

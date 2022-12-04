@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import { EmojiObjects } from '@mui/icons-material';
-import { QuoteStyled } from "./quote.style";
+import { QuoteStyled } from './quote.style';
 
 type Props = {};
 
 const Quote: React.FC<Props> = () => (
   <QuoteStyled>
-    <EmojiObjects fontSize={ "large" } />
+    <EmojiObjects fontSize={ 'large' } />
     <div>
-      <span>"L'éducation est l'arme la plus puissante pour changer le monde."</span>
+      <span>'L'éducation est l'arme la plus puissante pour changer le monde.'</span>
       <span>-Nelson Mandela</span>
     </div>
   </QuoteStyled>

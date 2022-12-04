@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import ChoixMultiple from "./ChoixMultiple";
+import React, { useState } from 'react';
+import ChoixMultiple from './ChoixMultiple';
 
 type Props = {
   key: number;
@@ -21,8 +21,8 @@ const Exercise: React.FC<Props> = ({
   choix,
   reussis,
 }) => {
-  const [answer, setAnswer] = useState<string>("");
-  const [tromper, setTromper] = useState<string>("");
+  const [answer, setAnswer] = useState<string>('');
+  const [tromper, setTromper] = useState<string>('');
   const [value, setValue] = useState<number>(0);
 
   const handleChange = (e: {
@@ -33,10 +33,10 @@ const Exercise: React.FC<Props> = ({
 
   const onSubmit = (): void => {
     if (answer === reponse || value === reponse) {
-      setTromper("réussis");
+      setTromper('réussis');
       reussis(id);
     } else {
-      setTromper("oui");
+      setTromper('oui');
     }
   };
 
@@ -45,9 +45,9 @@ const Exercise: React.FC<Props> = ({
       <h2>{question}</h2>
       <p>ici une image avec ce lien la: {img}</p>
       <p>ca cest lexercise avec la key: {id}</p>
-      {tromper === "oui" ? (
+      {tromper === 'oui' ? (
         <p>Ce n'est pas la reponse, try again!</p>
-      ) : tromper === "réussis" ? (
+      ) : tromper === 'réussis' ? (
         <p>bravo! je sais pas encore quoi faire quand cest réussis</p>
       ) : null}
       {type === 1 ? (

@@ -1,7 +1,8 @@
-import { styled } from "@mui/material";
+import { styled } from '@mui/material';
+import { color } from '../../style/color';
 
 export const SearchBarStyled = styled('div')({
-  backgroundColor: '#5a00b8',
+  backgroundColor: color.secondaryColor,
   display: 'flex',
   justifyContent: 'flex-end',
   paddingRight: '10%'
@@ -9,8 +10,8 @@ export const SearchBarStyled = styled('div')({
 
 export const InputStyle = () => ({
   margin: '10px',
-  border: '1px solid #00c0f6',
+  border: `1px solid ${ color.primaryColor }`,
   '.MuiInputBase-input': {
-    color: '#00c0f6',
+    color: color.primaryColor,
   }
 });

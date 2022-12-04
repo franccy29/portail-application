@@ -1,7 +1,7 @@
-import React from "react";
-import LinkButton from "../link-button/link-button";
-import { NavBarStyled } from "./NavBar.style";
-import Quote from "./quote/quote";
+import React from 'react';
+import LinkButton from '../link-button/link-button';
+import { NavBarStyled } from './NavBar.style';
+import Quote from './quote/quote';
 
 type Props = {};
 

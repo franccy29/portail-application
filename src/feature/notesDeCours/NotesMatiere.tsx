@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {
   navigator: (nomDePage: string) => void;
@@ -15,7 +15,7 @@ const NotesMatiere: React.FC<Props> = ({
 }) => {
   const handleClick = () => {
     matiereChoose(matiere);
-    navigator("NotesList");
+    navigator('NotesList');
   };
   return (
     <div onClick={handleClick}>

@@ -1,5 +1,5 @@
-import React from "react";
-import CreeChoixMultiple from "./CreeChoixMultiple";
+import React from 'react';
+import CreeChoixMultiple from './CreeChoixMultiple';
 
 type Props = {
   id: number;

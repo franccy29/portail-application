@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Exercise from "./Exercise";
+import React, { useState } from 'react';
+import Exercise from './Exercise';
 
 type Props = {
   atelierId: number;
@@ -15,31 +15,31 @@ const data: {
 }[] = [
   {
     id: 2,
-    reponse: "reponse1",
+    reponse: 'reponse1',
     img: "lien d'image",
-    question: "la question1 est ici",
+    question: 'la question1 est ici',
     type: 1,
   },
   {
     id: 2,
-    reponse: "reponse2",
+    reponse: 'reponse2',
     img: "lien d'image",
-    question: "la question2 est ici",
+    question: 'la question2 est ici',
     type: 1,
   },
   {
     id: 2,
-    reponse: "reponse3",
+    reponse: 'reponse3',
     img: "lien d'image",
-    question: "la question3 est ici",
+    question: 'la question3 est ici',
     type: 1,
   },
   {
     id: 2,
     reponse: 4,
     img: "lien d'image",
-    question: "la question4 est ici cest choix de reponse et la reponse cest 4",
-    choix: ["test1", "test2", "test3", "test4 et reponse"],
+    question: 'la question4 est ici cest choix de reponse et la reponse cest 4',
+    choix: ['test1', 'test2', 'test3', 'test4 et reponse'],
     type: 2,
   },
 ];

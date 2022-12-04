@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import FaireAtelier from "./FaireAtelier";
+import React, { useState } from 'react';
+import FaireAtelier from './FaireAtelier';
 
 type Props = {
   navigator: React.Dispatch<React.SetStateAction<string>>;
@@ -8,10 +8,10 @@ type Props = {
 const AjouterAtelier: React.FC<Props> = ({ navigator }) => {
   const [questionArray, setQuestionArray] = useState<{type: number, question: string, image?: string, reponse: string | number, choix: string[]}[]>([]);
   const [semaineChoisis, setSemaineChoisis] = useState<number>(0);
-  const [titreAtelier, setTitreAtelier] = useState<string>("");
+  const [titreAtelier, setTitreAtelier] = useState<string>('');
   const [erreurForm, setErreurForm] = useState<Boolean>(false);
   const [exercise, setExercise] = useState<{type: number, question: string, image?: string, reponse: string | number, choix: string[]}>({
-    type: 1, question: "", image: "", reponse: 1, choix: ["", "", "", ""]
+    type: 1, question: '', image: '', reponse: 1, choix: ['', '', '', '']
   });
 
   const handleSemaine = (input: {
@@ -24,9 +24,9 @@ const AjouterAtelier: React.FC<Props> = ({ navigator }) => {
 
 
   const ajouterQuestions = () : void => {
-    if (exercise.question !== "" && exercise.reponse !== 1 && ( exercise.reponse !== 1 ) ) {
+    if (exercise.question !== '' && exercise.reponse !== 1 && ( exercise.reponse !== 1 ) ) {
       setQuestionArray([ ...questionArray, exercise ]);
-      setExercise({type: 1, question: "", image: "", reponse: 1, choix: ["", "", "", ""]});
+      setExercise({type: 1, question: '', image: '', reponse: 1, choix: ['', '', '', '']});
       setErreurForm(false);
     } else {
       setErreurForm(true);
@@ -40,16 +40,16 @@ const AjouterAtelier: React.FC<Props> = ({ navigator }) => {
       questions: questionArray
     };
     if (questionArray.length > 0) {
-      console.log("envoye ca au backend: ", objectAEnvoyer);
+      console.log('envoye ca au backend: ', objectAEnvoyer);
       setQuestionArray([]);
-      navigator("home");
+      navigator('home');
     }
   };
 
   return (
     <div>
       <h1>ajoute un atelier ici</h1>
-      <p onClick={() => navigator("home")}>retour au menu</p>
+      <p onClick={() => navigator('home')}>retour au menu</p>
       <p>
         faire un formulaire qui demande la matiere, si cest un test ou atelier
         pi apres avoir infini de question ajoutable que tu choose entre text ou
@@ -79,7 +79,7 @@ const AjouterAtelier: React.FC<Props> = ({ navigator }) => {
         setExercise={setExercise}
       />
       {erreurForm && <p>les field sont pas correct pik voyon donc</p>}
-      <button onClick={() => console.log("c po fait")}>bouton genre back mais po fait</button>
+      <button onClick={() => console.log('c po fait')}>bouton genre back mais po fait</button>
       <button onClick={ajouterQuestions}>lets go, une autrte activité</button>
       <button onClick={saveAtelier}>finito pipo, tout est fait</button>
     </div>

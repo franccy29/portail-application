@@ -1,6 +1,6 @@
-import React from "react";
-import NotesUnique from "./NotesUnique";
-import NotesUniqueVideo from "./NoteUniqueVideo";
+import React from 'react';
+import NotesUnique from './NotesUnique';
+import NotesUniqueVideo from './NoteUniqueVideo';
 
 type Props = { matiere: string };
 
@@ -13,72 +13,72 @@ const data: {
 }[] = [
   {
     id: 1,
-    matiere: "francais",
-    titre: "titre dun pdf de francais",
-    lien: "lien du pdf",
+    matiere: 'francais',
+    titre: 'titre dun pdf de francais',
+    lien: 'lien du pdf',
     pdf: true,
   },
   {
     id: 2,
-    matiere: "anglais",
-    titre: "titre dun pdf de anglais",
-    lien: "lien du pdf",
+    matiere: 'anglais',
+    titre: 'titre dun pdf de anglais',
+    lien: 'lien du pdf',
     pdf: true,
   },
   {
     id: 3,
-    matiere: "francais",
-    titre: "titre dun pdf de francais2",
-    lien: "lien du pdf",
+    matiere: 'francais',
+    titre: 'titre dun pdf de francais2',
+    lien: 'lien du pdf',
     pdf: true,
   },
   {
     id: 4,
-    matiere: "anglais",
-    titre: "titre dun pdf de anglais2",
-    lien: "lien du pdf",
+    matiere: 'anglais',
+    titre: 'titre dun pdf de anglais2',
+    lien: 'lien du pdf',
     pdf: true,
   },
   {
     id: 5,
-    matiere: "maths",
-    titre: "titre dun pdf de Maths",
-    lien: "lien du pdf",
+    matiere: 'maths',
+    titre: 'titre dun pdf de Maths',
+    lien: 'lien du pdf',
     pdf: true,
   },
   {
     id: 6,
-    matiere: "anglais",
-    titre: "titre dun pdf de anglais3",
-    lien: "lien du pdf",
+    matiere: 'anglais',
+    titre: 'titre dun pdf de anglais3',
+    lien: 'lien du pdf',
     pdf: true,
   },
   {
     id: 7,
-    matiere: "francais",
-    titre: "titre dun video de francais",
-    lien: "lien du video",
+    matiere: 'francais',
+    titre: 'titre dun video de francais',
+    lien: 'lien du video',
     pdf: false,
   },
   {
     id: 8,
-    matiere: "anglais",
-    titre: "titre dun video de anglais",
-    lien: "lien du video",
+    matiere: 'anglais',
+    titre: 'titre dun video de anglais',
+    lien: 'lien du video',
     pdf: false,
   },
   {
     id: 9,
-    matiere: "maths",
-    titre: "titre dun video de francais",
-    lien: "lien du video",
+    matiere: 'maths',
+    titre: 'titre dun video de francais',
+    lien: 'lien du video',
     pdf: false,
   },
   {
     id: 10,
-    matiere: "anglais",
-    titre: "titre dun video de anglais",
-    lien: "lien du video",
+    matiere: 'anglais',
+    titre: 'titre dun video de anglais',
+    lien: 'lien du video',
     pdf: false,
   },
 ];

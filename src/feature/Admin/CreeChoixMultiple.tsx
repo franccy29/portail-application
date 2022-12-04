@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 type Props = {
   exercise: {
@@ -17,7 +17,7 @@ type Props = {
 }>>;
 };
 
-let textArray: string[] = ["", "", "", ""];
+let textArray: string[] = ['', '', '', ''];
 const CreeChoixMultiple: React.FC<Props> = ({ exercise, setExercise }) => {
   const [checked, setChecked] = useState<number>(1);
 
@@ -42,7 +42,7 @@ const CreeChoixMultiple: React.FC<Props> = ({ exercise, setExercise }) => {
       <div>
         <div>
           <input
-            type="radio"
+            type='radio'
             onChange={() => handleChange(1)}
             checked={checked === 1}
           />
@@ -50,7 +50,7 @@ const CreeChoixMultiple: React.FC<Props> = ({ exercise, setExercise }) => {
         </div>
         <div>
           <input
-            type="radio"
+            type='radio'
             onChange={() => handleChange(2)}
             checked={checked === 2}
           />
@@ -58,7 +58,7 @@ const CreeChoixMultiple: React.FC<Props> = ({ exercise, setExercise }) => {
         </div>
         <div>
           <input
-            type="radio"
+            type='radio'
             onChange={() => handleChange(3)}
             checked={checked === 3}
           />
@@ -66,7 +66,7 @@ const CreeChoixMultiple: React.FC<Props> = ({ exercise, setExercise }) => {
         </div>
         <div>
           <input
-            type="radio"
+            type='radio'
             onChange={() => handleChange(4)}
             checked={checked === 4}
           />

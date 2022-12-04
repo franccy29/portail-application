@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink, redirect } from "react-router-dom";
-import { LinkButtonStyle } from "./link-button.style";
+import React from 'react';
+import { NavLink, redirect } from 'react-router-dom';
+import { LinkButtonStyle } from './link-button.style';
 
 
 type Props = {

@@ -1,6 +1,6 @@
-import { Input } from "@mui/material";
-import React from "react";
-import { InputStyle, SearchBarStyled } from "./serach-bar.style";
+import { Input } from '@mui/material';
+import React from 'react';
+import { InputStyle, SearchBarStyled } from './serach-bar.style';
 import { Search } from '@mui/icons-material';
 
 
