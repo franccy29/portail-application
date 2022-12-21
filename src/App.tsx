@@ -1,33 +1,30 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom';
 import { AppStyled } from './App.style';
-import NavBar from './components/nav-bar/NavBar';
-import SearchBar from './components/search-bar/search-bar';
-import Home from './feature/Admin/Home';
-import Capsules from './feature/capsules/capsules';
-import Ateliers from './feature/ateliers/Ateliers';
-import HomeUser from './feature/home/Home-user';
-import Notes from './feature/notesDeCours/Notes';
-import Tests from './feature/tests/Tests';
 
+function App() {
+  const [count, setCount] = useState(0)
 
-export const App = () => (
-  <AppStyled className={ 'app' }>
-    <div className={ 'menu' }>
+  return (
+    <AppStyled className={ 'app' }>
+    {/* <div className={ 'menu' }>
       <SearchBar />
       <NavBar />
-    </div>
+    </div> */}
     <div className={ 'feature' }>
       <Routes>
-        <Route path='acceuil' element={<HomeUser />} />
-        <Route path='notes' element={<Notes />} />
+        {/* <Route path='login' element={<Login />} />
+        <Route path='home' element={<Home />} />
+        <Route path='notes/' element={<Notes />} />
+        <Route path='notes/:id' element={<NotesDisplay />} />
         <Route path='ateliers' element={<Ateliers />} />
-        <Route path='capsules' element={<Capsules />} />
-        <Route path='tests' element={<Tests />} />
-        <Route path='ressources' element={<p>ressources</p>} />
-        <Route path='admin' element={<Home />} />
+        <Route path='ateliers/:id' element={<AteliersDisplay />} /> */}
+        <Route path='admin' element={<p>PAGE D'ADMIN</p>} />
         <Route path='*' element={<p>404</p>} />
       </Routes>
     </div>
 </AppStyled>
-);
+  )
+}
+
+export default App
