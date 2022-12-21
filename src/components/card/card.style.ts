@@ -30,13 +30,3 @@ export const CardStyle = styled('div')({
     }
   }
 });
-
-export const buttonStyle: SxProps = {
-  display: 'flex',
-  alignSelf: 'flex-end',
-  backgroundColor: color.secondaryColor,
-  width: '60%',
-  ':hover': {
-    backgroundColor: color.secondaryColor
-  }
-}

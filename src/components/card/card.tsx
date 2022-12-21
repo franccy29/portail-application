@@ -1,20 +1,16 @@
 import React from 'react';
-import { Button } from '@mui/material';
-import { buttonStyle, CardStyle } from './card.style';
-import { Link } from 'react-router-dom';
-
+import { CardStyle } from './card.style';
 
 type Props = {
-  button: string;
   image?: any;
   theme: string;
   title: string;
   description: string;
-  link: string;
+  onClick: Function;
 };
 
-const Card: React.FC<Props> = ({ button, image, theme, title, description, link }) => (
-  <CardStyle className={ 'card-element' }>
+const Card: React.FC<Props> = ({ onClick, image, theme, title, description }) => (
+  <CardStyle className={ 'card-element' } onClick={ () => onClick() }>
     { image &&
       <img
         src={ image }
@@ -33,11 +29,6 @@ const Card: React.FC<Props> = ({ button, image, theme, title, description, link 
       <span className={ 'description' }>
         { description }
       </span>
-      <Button
-        children={ <Link to={ link }>{button}</Link> }
-        variant={ 'contained' }
-        sx={ buttonStyle }
-      />
     </div>
   </CardStyle>
 );
